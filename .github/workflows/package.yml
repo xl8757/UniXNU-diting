@@ -174,7 +174,7 @@ jobs:
               'os': {'uuid': root['os_volume_uuid']},
               'systemos': {'uuid': root['systemos_volume_uuid']},
               # Live 32 GiB GPT-wrapped APFS Data volume UUID on the device.
-              'data': {'uuid': 'B7FBCC5C-CFC2-4AF1-98F5-3D0D394EF2F0'},
+              'data': {'uuid': 'D08AA5D9-FFA7-4905-9164-B39F5806F234'},
           }
           Path(sys.argv[1]).write_text(json.dumps(layout, indent=2))
           # The UUIDs are compiled into the kernel (kern_exec selects the volumes by them), so
